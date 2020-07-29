@@ -2276,3 +2276,20 @@ form .input-group {
   margin-top: 10px;
   border-radius:5px!important;
 }
+
+.up{
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: rgb(32 175 236);
+  box-shadow: 1px 1px 7px rgb(0 0 0 / 24%);
+  display: block;
+  position: fixed;
+  bottom: 44px;
+  right: 20px;
+  color: white;
+  padding-top: 10px;
+  border: 3px solid #ffffff73;
+  text-align: center;
+  cursor: pointer;
+}

@@ -15,5 +15,29 @@ $(document).ready(function () {
 			$("#btn").click(function (e) {
 				e.preventdefault();
 			});
+
+	//SCROLL TOP CON ANIMATE
+	var up = $('.up');
+	up.hide();
+	up.click(function(event) {
+		$('html,body').animate({
+			scrollTop: 0},
+			500, function() {
+			console.log('Se realizo la animación')
+		});
+	});
+
+	$(window).scroll(function (event) {
+		var scroll = $(window).scrollTop();
+		if(scroll >= 100){
+			up.fadeIn();
+		}else{
+			up.fadeOut();
+		}
+	});
+
+
+
+
 });
 
